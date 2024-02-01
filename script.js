@@ -40,7 +40,7 @@ changeRandomWord()
 
 btnReset.addEventListener("click", reset)
 const letterMistake = document.querySelector(".letters-mistake")
-const 
+
 
 function reset() {
     const lengthWord = wordSscramble.innerHTML.length
