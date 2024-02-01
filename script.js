@@ -129,7 +129,7 @@ const lifes = document.querySelector(".list-circles")
 function loseLife(tries) {
     const idLife = "life_" + tries
     const life = document.getElementById(idLife)
-    life.style.backgroundColor = '#4A5567'
+    life.style.backgroundColor = '#7429C6'
 }
 
 function changeTagTries() {
@@ -145,7 +145,7 @@ const letterMistake = document.querySelector(".letters-mistake")
 function changeStyleLifes() {
     const lifes = document.querySelectorAll(".try-circle")
     for (let i = 0; i <lifes.length;i++) {
-        lifes[i].style.backgroundColor = '#7429C6'
+        lifes[i].style.backgroundColor = '#4A5567'
     }
 }
 function reset() {
