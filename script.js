@@ -20,12 +20,16 @@ const btnReset = document.getElementById("btn-reset")
 
 const wordSscramble = document.querySelector(".word-scramble")
 
-btnRandom.addEventListener("click", changeRandomWord)
+btnRandom.addEventListener("click", cLickchangeRandomWord)
 
+function cLickchangeRandomWord() {
+    changeRandomWord()
+    reset()
+}
 function changeRandomWord() {
-    getRandomWord()
     wordSscramble.innerHTML = scrambleWord(getRandomWord())
     generateWordInputs(wordSscramble.innerHTML.length)
+
 }
 
 function checkLetter(letter, pos) {
@@ -35,7 +39,7 @@ function checkLetter(letter, pos) {
         return
     } 
 
-    if(letter == letterWord) {
+    if(letter.toLowerCase() == letterWord) {
         console.log("SAMEE")
         //go to the next box
         //check if the game is won
@@ -139,6 +143,8 @@ init()
 
 btnReset.addEventListener("click", reset)
 const letterMistake = document.querySelector(".letters-mistake")
+console.log(letterMistake)
+
 
 function changeStyleLifes() {
     const lifes = document.querySelectorAll(".try-circle")
@@ -149,6 +155,7 @@ function changeStyleLifes() {
 function reset() {
     const lengthWord = wordSscramble.innerHTML.length
     generateWordInputs(lengthWord)
+    console.log(letterMistake)
     letterMistake.innerHTML = ""
     tries = 0
     changeTagTries()
