@@ -1,0 +1,121 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+body {
+    background-image: url("bg-guess-the-word.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #F2F5F9;
+}
+
+.card {
+    background-color: #030616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 26px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    border-radius: 20px;
+}
+.img-title {
+    padding-bottom: 24px;
+}
+.div-word-scramble {
+    padding: 96px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.word-scramble {
+    font-size: 32px;
+    letter-spacing: 15px;
+}
+.tags-card {
+    width: 100%;
+    display: flex;
+    color: #4A5567;
+    padding-top: 24px;
+    justify-content: space-evenly;
+}
+.tag-tries {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+small {
+    font-size: 0.75rem;
+}
+.list-circles {
+    display: flex;
+    gap: 4px;
+}
+.try-circle {
+    background-color: #7429C6;
+    width: 6px;
+    height: 6px;
+    border-radius: 40%;
+}
+.tag-mistakes {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.letter {
+    color: #F2F5F9;
+    font-size: 14px;
+}
+.letters-mistake{
+    display: flex;
+    gap: 2px;
+}
+
+.word-container {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    padding-top: 52px;
+    padding-bottom: 52px;
+
+}
+.letter-word{
+    width: 25px;
+    height: 25px;
+    background-color: #030616;
+    border: 2px solid #4A5567;
+    border-radius: 6px;
+    color : #F2F5F9;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    padding: 6px;
+}
+.letter-word:focus{
+    outline: none;
+    border: 2px solid #672171;
+    
+}
+.buttons {
+    display: flex;
+    gap: 40px;
+}
+.btn-card {
+    font-family: "Outfit", sans-serif;
+    background-color: #C951E7;
+    color: #F2F5F9;
+    border-radius: 10px;
+    font-size: 14px;
+    border: 0;
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
