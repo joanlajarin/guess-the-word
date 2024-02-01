@@ -120,6 +120,8 @@ function scrambleWord(word) {
 function init() {
     changeRandomWord()
     changeTagTries()
+    const nextEl = document.querySelectorAll(".letter-word")[0]
+    nextEl.focus()
 }
 
 const lifes = document.querySelector(".list-circles")
