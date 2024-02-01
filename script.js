@@ -40,18 +40,13 @@ function checkLetter(letter, pos) {
     } 
 
     if(letter.toLowerCase() == letterWord) {
-        console.log("SAMEE")
-        //go to the next box
-        //check if the game is won
         gameWon = checkWonGame()
         if (!gameWon) {
             const nextEl = document.querySelectorAll(".letter-word")[pos + 1]
             nextEl.focus()
         }
     } else {
-        //añadir a la lista de letras erroneas
         addMistake(letter)
-        //bajar una vida
         loseOneTry()
     }
 }
@@ -143,7 +138,6 @@ init()
 
 btnReset.addEventListener("click", reset)
 const letterMistake = document.querySelector(".letters-mistake")
-console.log(letterMistake)
 
 
 function changeStyleLifes() {
@@ -155,7 +149,6 @@ function changeStyleLifes() {
 function reset() {
     const lengthWord = wordSscramble.innerHTML.length
     generateWordInputs(lengthWord)
-    console.log(letterMistake)
     letterMistake.innerHTML = ""
     tries = 0
     changeTagTries()
